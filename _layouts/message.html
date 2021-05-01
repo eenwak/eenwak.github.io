@@ -1,0 +1,22 @@
+---
+layout: basic
+---
+
+<div class="page-full page-post">
+
+    <header class="post__header header--single">
+		
+		<div class="wrap">
+
+            {% if page.featured_image %}
+            <img src="{{ page.featured_image | relative_url }}">
+            {% endif %}
+
+			<h1 class="post__title">{{ page.title }}</h1>
+			<h2 class="post__subtitle subtitle--light">{{ page.description }}</h2>
+            <p><a href="/" class="button--fill">Back To Home</a></p>
+            
+		</div>
+
+	</header>
+</div>

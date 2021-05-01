@@ -1,0 +1,245 @@
+/* Custom CSS - https://fadoua.dev */
+
+body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.07'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+// Full Pages
+.page-full {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+        padding-top: 24px;
+    }
+
+    img {
+        max-width: 160px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+  }
+
+// About Button
+.about__content {
+    .button--fill {
+        background-color: transparent;
+        color: $accent-color;
+        border: 1px dashed $accent-color;
+        margin-top: 10px;
+    }
+}
+
+// Social Icon Colors
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #dd2a7b;
+}
+
+// Post Technologies List
+.list {
+    .grid,
+    .grid__2-col,
+    .grid__3-col,
+    .grid__4-col {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: none;
+    }
+}
+
+.list .list_item:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: $list-icon-size / 2;
+    top: $list-icon-size / 2;
+    width: 10px;
+    height: 100%;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-left-style: dashed;
+    border-color: $accent-color;
+    margin-left: 0;
+    z-index: -1;
+}
+
+.list_item {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: $list-icon-size 1fr;
+    grid-template-rows: none;
+}
+
+.list_item_icon img {
+    height: $list-icon-size;
+}
+
+.list_item:not(:last-child) {
+    padding: 0 0 50px 0;
+}
+
+.list_item_content {
+    max-width: 400px;
+}
+
+.small {
+    .list_item:not(:last-child)::after {
+        left: $list-icon-small / 2;
+        top: $list-icon-small / 2;
+    }
+
+    .list_item {
+        grid-template-columns: $list-icon-small 1fr;
+    }
+
+    .list_item_icon img {
+        height: $list-icon-small;
+    }
+}
+
+// Post Link Icons
+.post__links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+
+    a {
+        display: block;
+        margin-left: 1em;
+    }
+
+    .link {
+        -webkit-transition: all ease-in-out 0.2s;
+        -moz-transition: all ease-in-out 0.2s;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .link:hover {
+        opacity: 0.5;
+    }
+}
+
+// Post Screens
+.post__screenshots {
+    padding: 0;
+
+    h4 {
+        padding-bottom: 12px;
+        text-transform: none;
+        text-align: left;
+    }
+
+    .screenshot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .screenshot_screen {
+            margin: 1em;
+            max-width: 320px;
+        }
+    }
+}
+
+// Post Dividers
+.page-project .post__content {
+    hr {
+        border-top: 1px dashed var(--accent);
+        background-color: transparent;
+    }
+}
+
+// Screen Sizes Adjustments
+@media (max-width: 768px) {
+    .screenshot_screen {
+        width: 100%;
+    }
+
+    .post__screenshots .screenshot {
+        flex-direction: column;
+    }
+
+    .screenshot .screenshot_screen {
+        order: -1;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .post__links {
+        a {
+            margin-right: 1em;
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .list {
+        .grid__2-col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid__3-col {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid__4-col {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .list .list_item:not(:last-child)::after {
+        width: 100%;
+        height: 10px;
+        border-top-width: 1px;
+        border-top-style: dashed;
+        border-left-width: 0px;
+    }
+
+    .list_item {
+        grid-template-columns: none;
+        grid-template-rows: $list-icon-size 1fr;
+    }
+
+    .list_item:not(:last-child) {
+        padding: 0 20px 0 0;
+    }
+
+    .small {
+        .list_item {
+            grid-template-columns: none;
+            grid-template-rows: $list-icon-small 1fr;
+        }
+    }
+
+    .post__links {
+        justify-content: flex-end;
+    }
+}
+
+// Overrides
+// About margins
+.about .about__content {
+    margin-top: 0px;
+}
+
+// Carrousel previous and next button (orinally white, difficult to see)
+.project__preview .owl-nav button svg {
+    fill: $accent-color;
+}

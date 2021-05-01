@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+{% if page.accent_color %}{% capture accent_color %}{{ page.accent_color }}{% endcapture %}{% endif %}
+
+<div class="page-project" style="--accent: {{ accent_color }}">
+
+	<header>
+		<div class="wrap">
+			<h1 class="post__title">{{ page.title }}</h1>
+			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
+		</div>
+
+		<div class="list wrap post__metadata">
+			<div class="grid__3-col small">
+				<!-- Date -->
+				<div class="list_item">
+					<span class="list_item_icon">
+						<img src="/images/icons/icon_circle_date.svg">
+					</span>
+					<div class="list_item_content">
+						<h5>Date</h4>
+							<p><b>From</b> {{ page.start | date: "%B %Y" }}</br>
+								<b>To</b> {{ page.end | date: "%B %Y" }}
+							</p>
+					</div>
+				</div>
+				<!-- Client -->
+				<div class="list_item">
+					<span class="list_item_icon">
+						<img src="/images/icons/icon_circle_client.svg">
+					</span>
+					<div class="list_item_content">
+						<h5>Client</h4>
+							<p>{{ page.employer }}
+								{% if page.client %}
+								</br><b>For</b> {{ page.client }}
+								{% endif %}
+							</p>
+					</div>
+				</div>
+				<!-- Technologies -->
+				<div class="list_item">
+					<span class="list_item_icon">
+						<img src="/images/icons/icon_circle_tech.svg">
+					</span>
+					<div class="list_item_content">
+						<h5>Technologies</h4>
+							{% for technology in page.technologies %}
+							<p><img class="tech-icon" src="/images/technologies/tech_{{ technology }}.png" />{{
+								technology |
+								capitalize }}</p>
+							{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="post__featured-image">
+			<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}">
+			<!-- App Links -->
+			<div class="post__links">
+				{% if page.website %}
+				<a class="link" href="{{ page.website }}" title="Website">
+					<img src="{{'/images/logos/website.svg' | relative_url}}">
+				</a>
+				{% endif %}
+				{% if page.apple %}
+				<a class="link" href="{{ page.apple }}" title="Apple Store">
+					<img src="{{'/images/logos/apple.svg' | relative_url}}">
+				</a>
+				{% endif %}
+				{% if page.google %}
+				<a class="link" href="{{ page.google }}" title="Play Store">
+					<img src="{{'/images/logos/google.svg' | relative_url}}">
+				</a>
+				{% endif %}
+			</div>
+		</div>
+	</header>
+
+	<section class="post-full">
+		<div class="wrap">
+			<article class="post__content {% if page.highlight_first %}highlight-first{% endif %}">
+				{%if page.headline %}
+				<hr>
+				<p class="subtitle--light">{{ page.headline }}</p>
+				<hr>
+				{% endif %}
+				{{ page.content }}
+
+				{% if page.screens.size > 0 %}
+				<div class="post__screenshots">
+					{% for screen in page.screens %}
+					{% assign modulo = forloop.index | modulo: 2 %}
+					<div class="screenshot">
+						{% if modulo == 0 %}
+						<img class="screenshot_screen"
+							src="{{ '/images/projects/screenshots/' | relative_url}}{{ screen.image }}">
+						{% endif %}
+						<div class="screenshot_content">
+							<h4 class="text-muted">{{ screen.title }}</h3>
+								<p>{{ screen.description }}</p>
+						</div>
+						{% if modulo != 0 %}
+						<img class="screenshot_screen"
+							src="{{ '/images/projects/screenshots/' | relative_url}}{{ screen.image }}">
+						{% endif %}
+					</div>
+					{% endfor %}
+				</div>
+				{% endif %}
+			</article>
+		</div>
+	</section>
+
+	{% include section__about.html divider=true %}
+</div>

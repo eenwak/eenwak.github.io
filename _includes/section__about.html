@@ -1,0 +1,23 @@
+<section class="about">
+  {% if include.divider == true %}
+    <div class="wrap"><hr/></div>
+    {% endif %}
+  <div class="wrap grid">
+
+    <div class="about__image">
+      <img src="{{ '/images/profile.jpg' | relative_url }}" alt="">
+
+      {% include component__socials.html %}
+    </div>
+
+    <div class="about__content">
+      <h2 class="title">Hi, I'm Fadoua</h2>
+      <p class="subtitle subtitle--light">Mobile Devigner</p>
+      <p>Mobile developer since 2014, I worked both on iOS and Android projects before shifting my focus entirely onto iOS development.</p>
+      <p>Having always had a strong sense of aesthetics, I also started cultivating my mobile design skills in 2017 and like using the word devigner to describe myself as a developer and self-taught designer.</p>
+      <p>I'd be happy to chat about your iOS development or design needs and see how I can help, feel free to <a href="#" class="contact-trigger js-contact">get in touch!</a></p>
+
+      <a href="{{ site.url }}/documents/Resume_Fadoua_Kawni__EN.pdf" class="button--fill" download>Download Resume</a>
+    </div>
+  </div>
+</section>

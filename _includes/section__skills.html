@@ -1,0 +1,22 @@
+<section class="skills">
+  <div class="wrap">
+    <h2 class="title">Skills</h2>
+
+    {% assign column = site.data.settings.skills.size %}
+    <div class="list">
+      <div class="grid__{{ column }}-col">
+        {% for skill in site.data.settings.skills %}
+        <div class="list_item">
+          <span class="list_item_icon">
+            <img src="/images/skills/{{ skill.icon }}">
+          </span>
+          <div class="list_item_content">
+            <h5>{{ skill.title }}</h4>
+              <p>{{ skill.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
