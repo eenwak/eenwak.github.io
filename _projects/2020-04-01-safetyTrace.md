@@ -17,8 +17,9 @@ client: Newcrest Mining
 website: https://bournedigital.com.au/
 
 technologies:
-  - swift
-  - sketch
+  - Swift
+  - Bluetooth
+  - Sketch
 
 headline: An app using Bluetooth and iBeacon technologies to improve COVID-19 contact tracing protocols.
 description: An app using Bluetooth and iBeacon technologies to improve COVID-19 contact tracing protocols.

@@ -17,7 +17,8 @@ client: Incitec Pivot
 website: https://bournedigital.com.au/
 
 technologies:
-  - swift
+  - Swift
+  - SAP
 
 headline: An iPad app used by truck drivers to make fertilizer deliveries during their work day and to assist them with any security checks they need to perform on their vehicles during these deliveries.
 description: An iPad app used by truck drivers to make fertilizer deliveries during their work day and to assist them with any security checks they need to perform on their vehicles during these deliveries.

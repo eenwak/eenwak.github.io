@@ -15,10 +15,10 @@ employer: Bourne Digital
 website: https://www.youtube.com/watch?v=gcPxJRFSmD8
 
 technologies:
-  - swift
-  - sap
-  - coreml
-  - sketch
+  - Swift
+  - SAP
+  - CoreML
+  - Sketch
 
 description: This app allows workers to raise safety hazards and/or create Maintenance Requests using Location, Text to Speech and Machine Learning tehnologies.
 

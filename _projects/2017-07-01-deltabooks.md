@@ -17,10 +17,10 @@ website: http://www.deltabooks.xyz/
 apple: https://itunes.apple.com/app/id1178749867
 
 technologies:
-  - swift
-  - realm
-  - coreData
-  - sketch
+  - Swift
+  - Realm
+  - CoreData
+  - Sketch
 
 headline: In an effort to read more, I designed and developed Deltabooks. A reading journal which allows readers to record their books lists and to take notes on their readings.
 description: A reading journal which allows readers to record their books lists and to take notes on their readings.

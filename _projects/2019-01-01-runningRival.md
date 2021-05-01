@@ -16,7 +16,7 @@ employer: Running Rival
 website: https://runningrival.com
 
 technologies:
-  - sketch
+  - Sketch
 
 headline: I designed this iOS app based on the client's specifications and requirements
 description: An app to help runners get more out of their runs by challenging friends and other fellow runners.
