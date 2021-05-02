@@ -1,8 +1,8 @@
 ---
 title: Deltabooks
 subtitle: iOS App Development & Design
-date: 2018-01-01 00:00:00
-start: 2017-04-01
+date: 2016-07-01 00:00:00
+start: 2016-07-01
 end: 2018-01-01
 
 accent_color: '#929292'
