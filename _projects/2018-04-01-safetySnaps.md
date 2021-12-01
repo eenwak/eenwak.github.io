@@ -3,7 +3,7 @@ title: Safety Snaps
 subtitle: iOS App Development & Design
 date: 2018-04-01 00:00:00
 start: 2018-04-01
-end: 2017-04-01
+end: 2018-04-01
 
 accent_color: '#262626'
 featured_image: safety_snaps_1.png
